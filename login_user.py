@@ -1,3 +1,5 @@
+from AddNote import Addnote
+
 def login():
     Email = input("Enter your email \n")  # No need for explicit str()
     Password = input("Enter Password \n")
@@ -8,15 +10,15 @@ def login():
     for line in Details.splitlines():  # Iterate over each line
         fields = line.split(",")  # Split into list [email, password, phone, name]
         
-        if len(fields) < 2:  # Ensure there's at least email and password
+        if len(fields) < 3:  # Ensure there's at least email and password
             continue
 
-        stored_email, stored_password = fields[0], fields[1]
+        stored_email, stored_password, stored_id = fields[0], fields[1], fields[2]
 
         if stored_email == Email:
             if stored_password == Password:
                 print("Thanks for logging in!")
-                return
+                Addnote(fields[2])
             else:
                 print("Incorrect Password")
                 return

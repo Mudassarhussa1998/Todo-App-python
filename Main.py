@@ -1,5 +1,6 @@
 from create_user import createuser
 from login_user import login
+from AddNote import Addnote
 
 def main():
     var = int(input("Enter what you want to do: \n 1. For Login \n 2. For Signup \n 3. Exit \n"))
@@ -12,6 +13,8 @@ def main():
     elif var == 3:
         print("Good Bye .................")
         return 0
+    elif var == 4:
+        Addnote(1231)
     else:
         print("incorrect input \n Try again")
         main()
