@@ -1,4 +1,4 @@
-from AddNote import Addnote
+from Home import home
 
 def login():
     Email = input("Enter your email \n")  # No need for explicit str()
@@ -18,7 +18,7 @@ def login():
         if stored_email == Email:
             if stored_password == Password:
                 print("Thanks for logging in!")
-                Addnote(fields[2])
+                home(fields[2])
             else:
                 print("Incorrect Password")
                 return

@@ -1,3 +1,4 @@
 ali@gmail.com,Ali@123,1113,03045650316,Ali
 mudassar@gmail.com,Mudassar@123,1114,03045650316,Mudassar
 khan@gmail.com,Khan@123,6580,02312312312312323,khan
+usman@gmail.com,Usman@123,4455,189231230123981238,usman
